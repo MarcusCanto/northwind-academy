@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_employees
+    description: 
+      Tabela dimensão dos funcionários da Northwind, tem categorização 
+      para produtos descontinuados na coluna is_discontinued
+    columns:
+      - name: PK_EMPLOYEE
+        description: Chave priária da tabela da dimensão de funcionários.
+        tests:
+          - unique
+          - not_null
