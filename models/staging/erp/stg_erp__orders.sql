@@ -1,7 +1,7 @@
 with
     source_order as (
         select
-            cast(id as int) pk_pedido
+            cast(id as int) pk_order
             , cast(employeeid as int) as fk_employee
             , cast(customerid as string) as fk_customer
             , cast(shipvia as int) as fk_shipvia
